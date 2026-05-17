@@ -1,0 +1,9 @@
+<div class="product-container">
+  <h2>Products</h2>
+  <p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
+  <ul *ngIf="products.length > 0">
+    <li *ngFor="let product of products">
+      <strong>{{ product.name }}</strong> - {{ product.description }} - ${{ product.price }}
+    </li>
+  </ul>
+</div>
